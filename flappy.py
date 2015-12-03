@@ -190,7 +190,7 @@ def mainGame(movementInfo,SHARED):
     crashTest = checkCrash({'x': playerx, 'y': playery, 'index': playerIndex},
                 SHARED['upperPipes'], SHARED['lowerPipes'])
     if crashTest[0]:
-        SHARED['reward'] = -1000#-abs(SHARED['playery']-SHARED['pipeY'])
+        SHARED['reward'] = 0#-abs(SHARED['playery']-SHARED['pipeY'])
         
         return {
         'y': playery,
